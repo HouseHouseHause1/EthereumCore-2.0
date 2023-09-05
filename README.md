@@ -1,5 +1,5 @@
 # L2X9RebootCore-NoTablist
-###### I won't be providing support
+###### I won't be providing support, thanks to Jpdvx or Jpdvx1 to building all this shit.
 
 ## Features
 ###  Chat Features
