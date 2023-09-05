@@ -1,0 +1,37 @@
+package me.l2x9.core.misc.epc;
+
+import com.destroystokyo.paper.event.entity.EntityAddToWorldEvent;
+import lombok.RequiredArgsConstructor;
+import me.l2x9.core.util.Utils;
+import org.bukkit.Chunk;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+
+import java.util.Arrays;
+import java.util.HashMap;
+
+public class EntitySpawnListener implements Listener {
+    private final HashMap<EntityType, Integer> entityPerChunk;
+
+    public EntitySpawnListener(HashMap<EntityType, Integer> entityPerChunk) {
+        this.entityPerChunk = entityPerChunk;
+    }
+
+    @EventHandler
+    public void onEntitySpawn(EntityAddToWorldEvent event) {
+        Entity entity = event.getEntity();
+        if (!entityPerChunk.containsKey(entity.getType())) return;
+        int amt = enumerate(entity.getLocation().getChunk(), entity.getType());
+        int max = entityPerChunk.get(entity.getType());
+        if (amt >= max) {
+            entity.remove();
+            Utils.log("&3Prevented a&r&a %s&r&3 from spawning (&r&a%d&r&3/&r&a%d&r&3)", entity.getType().toString().toLowerCase(), amt, max);
+        }
+    }
+
+    private int enumerate(Chunk chunk, EntityType entityType) {
+        return (int) Arrays.stream(chunk.getEntities()).filter(e -> e.getType() == entityType).count();
+    }
+}

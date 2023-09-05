@@ -1,0 +1,80 @@
+# !!! SEE THE LOCALIZATION CONFIG FILES FOR TABLIST CONFIGURATION !!!
+#!!! SEE THE LOCALIZATION CONFIGS FOR HELP MESSAGE CONFIGURATION !!!
+
+Prefix: ''
+Homes:
+  Enabled: true #Enable this module
+  #The closest the player can be to 0,0
+  Radius: 500
+  #Message to send to the player when they are too close to spawn
+  TooCloseMessage: '&3You must be at least&r&a 500&r&3 blocks from spawn'
+  #Max homes a player can have
+  MaxHomes: 3
+RandomSpawn:
+  Enabled: true #Enable this module
+  #The max range to spawn the player
+  Range: 500
+  #World name to spawn the player in
+  World: 'world'
+  #Blocks to not spawn the player on
+  Blocks:
+    - 'STATIONARY_LAVA'
+    - 'water'
+    - 'lava'
+    - 'air'
+    - 'cactus'
+Commands:
+  Enabled: true #Enable this module
+  #Help message
+  # to send to the player for /discord
+  Discord: '&3Join us on discord at&r&a https://discord.l2x9.me'
+ChatControl:
+  Enabled: true #Enable this module
+  PreventLinks: true #Uses a list of all TLDs
+  #How long before a player can chat again (In seconds)
+  Cooldown: 3
+  #Blocked words
+  Blocked: []
+  ChatTranslation: #Translate chat messages to the recipients language in real time using LibreTranslate
+    Enabled: true
+    URL: "http://127.0.0.1:5000"
+    APIKey: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+  CommandWhitelist:
+    - "/ignore"
+    - "/unignore"
+    - "/togglechat"
+    - "/toggledeathmsg"
+    - "/msg"
+    - "/message"
+    - "/whisper"
+    - "/tell"
+    - "/w"
+    - "/reply"
+    - "/r"
+    - "/home"
+    - "/sethome"
+    - "/delhome"
+    - "/help"
+    - "/plugins"
+    - "/pl"
+    - "/kill"
+    - "/stats"
+    - "/discord"
+Patches:
+  FakePlugins:
+    PluginList:
+       'Hey idiot /pl is enabled'
+  Redstone:
+    StrictTPS: 13 #The tps to start strictly monitoring redstone at
+    StrictMaxVLS: 70 #How many redstone operations per second can happen in strict mode
+    RegularMaxVLS: 20000 #How many redstone operations per second can happen in regular mode
+
+  BlockPhysics-disable-tps: 13 #water / lava flowing disable tps this is useful on new servers with lots of block physics updates that cause lag
+
+Misc:
+  EntityPerChunk:
+    CheckInterval: 2 #In minutes
+    EntitiesPerChunk:
+      - 'wither::20'
+      - 'armor_stand::15'
+  ACSlowdown: 3 #How many ticks does a crystal have to be alive for it to be killed
