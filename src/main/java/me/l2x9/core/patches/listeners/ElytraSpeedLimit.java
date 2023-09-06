@@ -1,10 +1,9 @@
 package me.l2x9.core.patches.listeners;
 
+import me.l2x9.core.patches.PatchManager;
 import me.l2x9.core.util.Utils;
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.craftbukkit.v1_12_R1.CraftServer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -13,10 +12,15 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 
 public class ElytraSpeedLimit implements Listener {
-    private int disableTPS = 15;
+    private final PatchManager main;
+    public ElytraSpeedLimit(final PatchManager main) {
+        this.main = main;
+    }
+
 
     @EventHandler
     public void onGlide(PlayerMoveEvent event) {
+        int disableTPS = main.getConfig().getInt("ElytraSpeedLimit");
         Player player = event.getPlayer();
         if (!player.isGliding()) return;
         double speed = calcSpeed(event);

@@ -64,6 +64,10 @@ public class ChatInfo {
     public boolean isAutoTranslate() {
         return this.autoTranslate;
     }
+
+    public void setAutoTranslate(final boolean autoTranslate) {
+        this.autoTranslate = autoTranslate;
+    }
     public boolean isIgnoring(UUID player) {
         return ignoring.contains(player);
     }

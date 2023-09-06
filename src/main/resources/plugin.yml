@@ -1,12 +1,15 @@
-name: ${project.name}
-version: ${project.version}
+name: L2X9RebootCore
+version: ${version}
 main: me.l2x9.core.L2X9RebootCore
-authors: [ 254n_m ]
-description: All of the plugins for thr l2x9 reboot
+authors: [ 254n_m , Jpdvx ]
+description: All of the plugins for thr l2x9 reboot (Jpdvx Version)
 softdepend:
   - Votifier
+  - PaperAPIExtensions
 commands:
   msg:
     aliases: [message, whisper, tell, w, t]
   reply:
     aliases: [r]
+  lavadupe:
+    aliases: [ ld ]

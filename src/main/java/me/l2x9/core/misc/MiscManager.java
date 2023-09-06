@@ -33,7 +33,6 @@ public class MiscManager extends Manager {
         plugin.registerListener(new JoinMessages());
         plugin.registerListener(new CrystalSlowdown(this));
         new AutoRestart();
-
         if (plugin.getServer().getPluginManager().getPlugin("Votifier") != null) {
             Votifier.getInstance().getListeners().add(new PlayerVoteListener());
             Utils.log("&3Successfully registered a Votifier listener");

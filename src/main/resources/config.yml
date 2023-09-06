@@ -70,6 +70,7 @@ Patches:
     RegularMaxVLS: 20000 #How many redstone operations per second can happen in regular mode
 
   BlockPhysics-disable-tps: 13 #water / lava flowing disable tps this is useful on new servers with lots of block physics updates that cause lag
+  ElytraSpeed-disable-tps: 15 #Disable Elytra until server get this tps
 
 Misc:
   EntityPerChunk:
@@ -78,3 +79,9 @@ Misc:
       - 'wither::20'
       - 'armor_stand::15'
   ACSlowdown: 3 #How many ticks does a crystal have to be alive for it to be killed
+
+LavaDupe:
+  Enabled: true
+  notify-dupes: true
+  item-multiplicator: 2
+

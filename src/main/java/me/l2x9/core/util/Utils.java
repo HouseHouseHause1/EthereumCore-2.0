@@ -21,7 +21,7 @@ import java.util.logging.Level;
 
 public class Utils {
     private static final DecimalFormat format = new DecimalFormat("#.##");
-    private static final String PREFIX = " &7&r&b&3L2X9&r&aCore&r&7&r";
+    private static final String PREFIX = " &6[&7&o&l2L2C&r&6]&r&7&r";
 
     public static String translateChars(String input) {
         return ChatColor.translateAlternateColorCodes('&', input);

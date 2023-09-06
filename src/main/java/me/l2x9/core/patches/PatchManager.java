@@ -36,7 +36,7 @@ public class PatchManager extends Manager {
         plugin.registerListener(new BoatFly());
         plugin.registerListener(new Damage());
         plugin.registerListener(new DispenserCrash());
-        plugin.registerListener(new ElytraSpeedLimit());
+        plugin.registerListener(new ElytraSpeedLimit(this));
         plugin.registerListener(new EndGateway());
         plugin.registerListener(new EntityCollideListener());
         registerConfigurable(FakePlugins.class, PacketPlayInTabComplete.class);

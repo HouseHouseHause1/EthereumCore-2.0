@@ -49,7 +49,7 @@ kick_message: "&7%s fue pateado para \"%s\""
 could_not_translate_message: "Error al traducir el mensaje debido a %s"
 message_auto_translated: "Este mensaje se ha traducido automáticamente.\n\nTexto original: %s"
 welcome_message: "&3Por favor, ten en cuenta que este servidor traducirá automáticamente tus mensajes de chat. Esto se puede desactivar ejecutando&r&a /toggletranslate."
-vote_announcement: "&a%s&r&3 Acabo de votar por L2X9 en&r&a %s"
+vote_announcement: "&a%s&r&3 Acabo de votar por 2L2C en&r&a %s"
 vote_thanks: "&3Gracias por votar. Has recibido una casa extra&r&a 2&r&3"
 #Complex messages
 HelpMessage:
@@ -67,7 +67,7 @@ HelpMessage:
   - "&3/plugins Mostrar todos los plugins del servidor"
   - "&3/kill Suicidarte"
   - "&3/stats Muestra cuanto pesa el mundo y cuantos jugadores se han unido"
-  - "&3/discord Muestra un link para unirte al discord de L2X9"
+  - "&3/discord Muestra un link para unirte al discord de 2L2C"
   - "&6-----------------------------------------------------"
 TabList:
   Header:
@@ -82,6 +82,6 @@ TabList:
     - '&7jugadores: &f%players% &7el servidor esta en linea desde: &f%uptime%'
     - ''
     - '&b&m------------------------------------------------------'
-    - '&r&7contacto: help@l2x9.me'
-    - '&r&7discusion: https://discord.l2x9.me/'
+    - '&r&7contacto: help@2l2c.me'
+    - '&r&7discusion: https://discord.2l2c.me/'
     - '&r&7Esos son los unicos contactos y paginas web oficiales de L2X9'

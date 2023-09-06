@@ -6,7 +6,7 @@
 
     <groupId>me.l2x9</groupId>
     <artifactId>l2x9rebootcore</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>L2X9RebootCore</name>
@@ -49,7 +49,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.2.4</version>
+                <version>3.5.0</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -63,8 +63,7 @@
                                 <filter>
                                     <artifact>*:*</artifact>
                                     <excludes>
-                                        <exclude>META-INF/maven/**</exclude>
-                                    </excludes>
+                                        <exclude>META-INF/maven/**</exclude></excludes>
                                 </filter>
                             </filters>
                             <relocations>
@@ -109,6 +108,13 @@
             <artifactId>protocolapi</artifactId>
             <version>1.2-SNAPSHOT</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>me.jpdvx</groupId>
+            <artifactId>paperapiextensions</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/PaperAPIExtensions-1.0-SNAPSHOT-all.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>

@@ -16,7 +16,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class NoCom implements PacketListener {
-    private final List<EnumPlayerDigType> validActions = Arrays.asList(EnumPlayerDigType.ABORT_DESTROY_BLOCK, EnumPlayerDigType.START_DESTROY_BLOCK, EnumPlayerDigType.STOP_DESTROY_BLOCK);
+    private final List<PacketPlayInBlockDig.EnumPlayerDigType> validActions = Arrays.asList(EnumPlayerDigType.ABORT_DESTROY_BLOCK, EnumPlayerDigType.START_DESTROY_BLOCK, EnumPlayerDigType.STOP_DESTROY_BLOCK);
 
     @GetField(clazz = PacketPlayOutBlockChange.class, name = "a")
     private Field outPosF;
@@ -42,7 +42,7 @@ public class NoCom implements PacketListener {
         PacketPlayInBlockDig packet = (PacketPlayInBlockDig) event.getPacket();
         BlockPosition position = (BlockPosition) posF.get(packet);
         Player player = event.getPlayer();
-        EnumPlayerDigType action = (EnumPlayerDigType) actionF.get(packet);
+        PacketPlayInBlockDig.EnumPlayerDigType action = (PacketPlayInBlockDig.EnumPlayerDigType) actionF.get(packet);
         if (!validActions.contains(action)) return;
         Point playerP = new Point(player.getLocation().getBlockX(), player.getLocation().getBlockZ());
         Point packetP = new Point(position.getX(), position.getZ());

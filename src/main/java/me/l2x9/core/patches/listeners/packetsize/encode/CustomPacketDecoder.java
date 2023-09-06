@@ -16,11 +16,16 @@ import org.bukkit.entity.Player;
 import java.io.IOException;
 import java.util.List;
 
-@AllArgsConstructor
+
 public class CustomPacketDecoder extends ByteToMessageDecoder {
 
     private final EnumProtocolDirection direction;
     private final Player player;
+
+    public CustomPacketDecoder(EnumProtocolDirection direction, Player player) {
+        this.direction = direction;
+        this.player = player;
+    }
 
     @Override
     protected void decode(ChannelHandlerContext ctx, ByteBuf buf, List<Object> list) throws Exception {

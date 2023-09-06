@@ -17,7 +17,7 @@ public class Localization {
         this.config = config;
     }
 
-    protected static void loadLocalizations(File dataFolder) {
+    public static void loadLocalizations(File dataFolder) {
         if (localizationMap != null) localizationMap.clear();
         localizationMap = new HashMap<>();
         File localeDir = new File(dataFolder, "Localization");

@@ -1,5 +1,5 @@
-# L2X9RebootCore-NoTablist
-###### I won't be providing support, thanks to Jpdvx or Jpdvx1 to building all this shit.
+# L2X9RebootCore
+###### Please note that this plugin is meant only for l2x9.me, and I probably won't be providing support
 
 ## Features
 ###  Chat Features
@@ -57,7 +57,22 @@
     Redstone | Prevent about 98% of all redstone based lag machines.
 ```
 ### - RandomSpawn | A basic random spawn that prevents players from spawning in water and lava
+### - TabList | A basic tablist
+
 All user facing messages from this plugin can be localized to any language supported by minecraft.
 This includes the TabList and HelpMessages. The default messages can be found [here](https://github.com/254nm/L2X9RebootCore/blob/master/src/main/resources/localization/en_us.yml)
 
 A demo of the lag machine patch can be found [here](https://youtu.be/7_H4m-GJtqs)
+
+
+## How to compile
+
+## Linux
+```bash
+./gradlew shadowJar
+```
+## Windows 🤮
+
+```
+.\gradlew.bat shadowJar
+```

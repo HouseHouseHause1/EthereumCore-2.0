@@ -3,7 +3,6 @@ package me.l2x9.core.patches.listeners.packetsize.encode;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;
-import lombok.RequiredArgsConstructor;
 import me.l2x9.core.event.LargePacketEvent;
 import me.l2x9.core.util.Utils;
 import net.minecraft.server.v1_12_R1.*;
@@ -14,10 +13,13 @@ import org.bukkit.entity.Player;
 
 import java.io.IOException;
 
-@RequiredArgsConstructor
 public class CustomPacketEncoder extends MessageToByteEncoder<Packet<?>> {
     private final Logger logger = LogManager.getLogger();
     private final Player player;
+
+    public CustomPacketEncoder(Player player) {
+        this.player = player;
+    }
 
     @Override
     protected void encode(ChannelHandlerContext context, Packet<?> packet, ByteBuf buf) throws Exception {
