@@ -1,5 +1,5 @@
 # L2X9RebootCore
-###### Please note that this plugin is meant only for l2x9.me, and I probably won't be providing support
+###### I probably won't be providing support
 Credits for the original core:https://github.com/254nm/L2X9RebootCore
 
 ## Features
