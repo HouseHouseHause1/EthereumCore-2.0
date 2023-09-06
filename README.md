@@ -57,22 +57,14 @@
     Redstone | Prevent about 98% of all redstone based lag machines.
 ```
 ### - RandomSpawn | A basic random spawn that prevents players from spawning in water and lava
-### - TabList | A basic tablist
-
 All user facing messages from this plugin can be localized to any language supported by minecraft.
 This includes the TabList and HelpMessages. The default messages can be found [here](https://github.com/254nm/L2X9RebootCore/blob/master/src/main/resources/localization/en_us.yml)
 
 A demo of the lag machine patch can be found [here](https://youtu.be/7_H4m-GJtqs)
 
 
-## How to compile
+## Lava Dupe | Simple dupe using Lava, buckets, hoppers and chests
 
-## Linux
-```bash
-./gradlew shadowJar
-```
-## Windows 🤮
+https://www.youtube.com/watch?v=vjFz8i3QvHY Video explaining it in spanish.
 
-```
-.\gradlew.bat shadowJar
-```
+https://www.youtube.com/watch?v=5Jy13XaOQG0 Video explaining it on english.
