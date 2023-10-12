@@ -27,7 +27,7 @@ Commands:
   Enabled: true #Enable this module
   #Help message
   # to send to the player for /discord
-  Discord: '&3Join us on discord at&r&a https://discord.l2x9.me'
+  Discord: '&3Join us on discord at&r&a https://discord.gg/pGWc2N7Me3'
 ChatControl:
   Enabled: true #Enable this module
   PreventLinks: true #Uses a list of all TLDs
@@ -36,7 +36,7 @@ ChatControl:
   #Blocked words
   Blocked: []
   ChatTranslation: #Translate chat messages to the recipients language in real time using LibreTranslate
-    Enabled: true
+    Enabled: false
     URL: "http://127.0.0.1:5000"
     APIKey: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
   CommandWhitelist:
@@ -84,4 +84,12 @@ LavaDupe:
   Enabled: true
   notify-dupes: true
   item-multiplicator: 2
+
+DispenserDupe:
+  enable:
+    dispenser: true
+    dropper: true
+  settings:
+    probability: 100
+    cooldown: 1
 

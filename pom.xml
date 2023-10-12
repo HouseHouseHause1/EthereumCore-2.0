@@ -6,7 +6,7 @@
 
     <groupId>me.l2x9</groupId>
     <artifactId>l2x9rebootcore</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.2-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>L2X9RebootCore</name>

@@ -112,6 +112,11 @@ public final class L2X9RebootCore extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new DropItem(this), this);
         getCommand("lavadupe").setExecutor((CommandExecutor)new Commands(this));
         getCommand("lavadupe").setTabCompleter((TabCompleter)new CommandCompleter());
+
+        //
+        //   DispenserDupe Events & Commands
+        //
+        me.l2x9.core.dupes.dispenserdupe.Util.load();
     }
 
     @Override

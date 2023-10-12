@@ -14,7 +14,7 @@ public class SayCommand extends BaseCommand {
     @Override
     public void execute(CommandSender sender, String[] args) {
         if (args.length > 0) {
-            Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', String.format("&6[&7&o&l2L2C&r&6]&r&7&r >> &3&l%s", String.join(" ", args))));
+            Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', String.format("&4[&c&lHK&4]&r&7&r >> &3&l%s", String.join(" ", args))));
         } else sendErrorMessage(sender, "Message cannot be blank");
     }
 }
