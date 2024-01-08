@@ -1,7 +1,7 @@
 name: L2X9RebootCore
 version: ${version}
 main: me.l2x9.core.L2X9RebootCore
-authors: [ 254n_m , Jpdvx ]
+authors: [ 254n_m , Jpdvx, House1 ]
 description: All of the plugins for thr l2x9 reboot (Jpdvx Version)
 softdepend:
   - Votifier
