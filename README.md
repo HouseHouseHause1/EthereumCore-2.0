@@ -1,4 +1,4 @@
-# L2X9RebootCore
+# EthereumCore 2.0
 ###### I probably won't be providing support
 Credits for the original core:https://github.com/254nm/L2X9RebootCore
 
@@ -31,6 +31,9 @@ Credits for the original core:https://github.com/254nm/L2X9RebootCore
     sethome | Set a home at your current location
     home | Teleport to a home you have set before
     delhome | Delete a home
+    tpa | asks for teleport
+    tpaccept | accepts teleport
+    tpadeny | denies teleport
 ```
 ###  Misc
 ```
@@ -63,9 +66,4 @@ This includes the TabList and HelpMessages. The default messages can be found [h
 
 A demo of the lag machine patch can be found [here](https://youtu.be/7_H4m-GJtqs)
 
-
-## Lava Dupe | Simple dupe using Lava, buckets, hoppers and chests
-
-https://www.youtube.com/watch?v=vjFz8i3QvHY Video explaining it in spanish.
-
-https://www.youtube.com/watch?v=5Jy13XaOQG0 Video explaining it on english.
+Also, many known dupe have been added like SalC1 dupe or Lava dupe into the configuration file.
