@@ -1,6 +1,6 @@
 # EthereumCore 2.0
-###### I probably won't be providing support
-Credits for the original core:https://github.com/254nm/L2X9RebootCore
+###### We won't be providing support
+Credits for the original core: https://github.com/254nm/L2X9RebootCore
 
 ## Features
 ###  Chat Features
