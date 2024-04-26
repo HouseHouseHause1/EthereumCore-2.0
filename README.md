@@ -61,9 +61,13 @@ Credits for the original core:https://github.com/254nm/L2X9RebootCore
     Redstone | Prevent about 98% of all redstone based lag machines.
 ```
 ### - RandomSpawn | A basic random spawn that prevents players from spawning in water and lava
-All user facing messages from this plugin can be localized to any language supported by minecraft.
-This includes the TabList and HelpMessages. The default messages can be found [here](https://github.com/254nm/L2X9RebootCore/blob/master/src/main/resources/localization/en_us.yml)
+```
+    All user facing messages from this plugin can be localized to any language supported by minecraft.
+    This includes the TabList and HelpMessages. The default messages can be found [here](https://github.com/254nm/L2X9RebootCore/blob/master/src/main/resources/localization/en_us.yml)
 
-A demo of the lag machine patch can be found [here](https://youtu.be/7_H4m-GJtqs)
-
-Also, many known dupe have been added like SalC1 dupe or Lava dupe into the configuration file.
+    A demo of the lag machine patch can be found [here](https://youtu.be/7_H4m-GJtqs)
+```
+### - Dupes | All the dupes that the plugin has are here.
+```
+    Dispenser Dupe | Uses a dispenser and a lever to duplicate
+    Lava Dupe | Uses lava on a hopper to duplicate.
